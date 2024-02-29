@@ -80,3 +80,34 @@ img.pull-left { margin-right: 10px; }
 
 	.widget-simplenav { margin-left:-5px; }		
 	.widget-simplenav a{ margin:0 5px; }		
+	
+/* Hover Img 
+.jumbotron top-space */
+.group-pic {
+	position: relative;
+	max-width: 100%;
+}
+
+.group-pic img {
+  max-width: 100%;
+  height: auto;
+}
+
+.group-pic .image-hover {
+	padding-top:30px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+  max-width: 100%;
+  height: auto;
+}
+
+.group-pic:hover .image-hover {
+  opacity: 1;
+}
